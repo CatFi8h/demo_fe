@@ -27,13 +27,14 @@ export default class App extends Component {
                 {title}
                 <div className="main">
                     <button
-                        className="btn btn-outlime-secondary"
-                        onClick={async ()=>{
+                        className=" btn btn-outline-secondary"
+                        onClick={async () => {
                             this.setState({
                                 data: await api.getResource(),
                                 clicked: true
                             });
-                        }}>
+                        }}
+                    >
                         Push
 
                     </button>

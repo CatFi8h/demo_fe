@@ -1,7 +1,7 @@
 export default class Api {
 
     _apiPath = 'http://localhost:8080';
-    _logUrl = '/log';
+    _logUrl = '/api/log';
 
     getResource = async () => {
         const res = await fetch(`${this._apiPath}${this._logUrl}`);
